@@ -230,6 +230,7 @@
       changeBook = newBook.toString();//same
       if (Card.style.backgroundColor == 'brown') {
         ContainerR.removeChild(Card);
+        
         myLibrary[id].read = false;//checks the bacrgrond color to know its current location and change it
     
         createCard(id);   //we recreate the item with a the same id but other location
@@ -263,6 +264,7 @@
       }
       forStorage = forStorage.replace(removeBook, '');
       localStorage.setItem('books', forStorage);   //data base
+      
     });
   }
 
